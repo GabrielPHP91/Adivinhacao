@@ -1,0 +1,138 @@
+/* Screen1 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(-45deg, #5b5bd0, #e73c7e, #5b5bd0, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+
+  font-size: 1.6rem;
+
+  display: grid;
+  place-items: center;
+
+  height: 100vh;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body,
+button,
+input {
+  font-family: 'DM Sans', sans-serif;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  background-color: #7879f1;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.6rem;
+
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #5b5bd0;
+}
+
+.hide {
+  display: none;
+}
+main {
+  background: #ffffff;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.6rem;
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  width: min(42.8rem, 90%);
+
+  margin-top: -12rem;
+
+  text-align: center;
+}
+
+/* screen1 */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+h1,
+p {
+  color: #34355b;
+}
+
+p {
+  opacity: 0.8;
+}
+
+form {
+  margin-top: 4.8rem;
+
+  display: flex;
+  justify-content: center;
+}
+
+input,
+button {
+  border: none;
+  padding: 1.6rem;
+}
+
+input {
+  background: #dce2e9;
+  color: #252525;
+
+  border-radius: 4px 0px 0px 4px;
+
+  width: 6rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+
+  outline: none;
+}
+input:focus {
+  background-color: #d4deeb;
+  transition: 0.3s;
+}
+
+/* scren2 */
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: normal;
+
+  margin-bottom: 3.3rem;
+}
+
+.screen2 button {
+  margin-top: 4.8rem;
+  border-radius: 0.4rem;
+}
