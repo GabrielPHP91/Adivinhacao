@@ -20,7 +20,11 @@ function toggleScreen() {
   screen2.classList.toggle('hide')
 }
 
-//colocar aqui
+function handleResetClick() {
+  toggleScreen()
+  xAttempts = 1
+  randomNumber = Math.round(Math.random() * 10)
+}
 
 function handleTryClick(event) {
   event.preventDefault() // não faça o padrão desse evento
