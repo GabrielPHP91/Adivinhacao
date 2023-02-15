@@ -28,7 +28,6 @@ function handleResetClick() {
 
 function handleTryClick(event) {
   event.preventDefault() // não faça o padrão desse evento
-  randomNumber = Math.round(Math.random() * 10)
 
   //Faz um Check de quantas tentativas foram para retornar se foram (tentativa) ou (tentativas)
   let check = xAttempts == 1
