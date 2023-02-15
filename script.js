@@ -40,10 +40,11 @@ function handleTryClick(event) {
     //Seleciona o texto h2 e substitui com o número de tentativas
     screen2.querySelector(
       'h2'
-    ).innerText = `Você acertou em ${xAttempts} ${tentativas}. `
+    ).innerText = `Você acertou em ${xAttempts} ${tentativas}.`
+    
     screen2.querySelector(
       'p'
-    ).innerText = `O número que eu pensei era ${xAttempts}.`
+    ).innerText = `O número que eu pensei era ${randomNumber}.`
   } else if (Number(inputNumber.value) < 0) {
     alert('Digite apenas números entre 0 e 10.')
   } else if (Number(inputNumber.value) > 10) {
