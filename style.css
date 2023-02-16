@@ -79,14 +79,12 @@ main {
 
 /* screen1 */
 
-img {
+.screen1 img {
   width: 8rem;
   margin-bottom: 2rem;
 
   animation: levitation 1s infinite alternate
     cubic-bezier(0.7, 0.25, 0.34, 0.78);
-
-    
 }
 
 @keyframes levitation {
@@ -136,6 +134,39 @@ p {
 
 p {
   opacity: 0.8;
+}
+
+.pTry {
+  color: red;
+
+  font-weight: 600;
+
+  margin-top: 2rem;
+  margin-bottom: -3rem;
+  animation: try 1s;
+}
+
+.hid {
+  display: none;
+}
+
+@keyframes try {
+  30% {
+    transform: scale(0.8);
+  }
+  40%,
+  60% {
+    transform: rotate(-10deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(10deg) scale(1.1);
+  }
+  70% {
+    transform: rotate(0deg) scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 form {
