@@ -28,6 +28,11 @@ let xAttempts = 1
 
 function handleTryClick(event) {
   event.preventDefault() // não faça o padrão desse evento
+  
+  if (inputNumber.value == '') {
+    alert(`Por favor, digite algum número.`)
+    inputNumber.value = ''
+  }
 
   //Faz um Check de quantas tentativas foram para retornar se foram (tentativa) ou (tentativas)
   let check = xAttempts == 1
