@@ -8,8 +8,6 @@ const btnTry = document.querySelector('#btnTry')
 const btnReset = document.querySelector('#btnReset')
 const inputNumber = document.querySelector('#inputNumber')
 
-let xAttempts = 1
-
 //Eventos:
 btnTry.addEventListener('click', handleTryClick)
 btnReset.addEventListener('click', handleResetClick)
@@ -25,6 +23,8 @@ function handleResetClick() {
   xAttempts = 1
   randomNumber = Math.round(Math.random() * 10)
 }
+
+let xAttempts = 1
 
 function handleTryClick(event) {
   event.preventDefault() // não faça o padrão desse evento
