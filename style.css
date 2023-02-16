@@ -80,11 +80,13 @@ main {
 /* screen1 */
 
 img {
-  width: 10rem;
+  width: 8rem;
   margin-bottom: 2rem;
 
   animation: levitation 1s infinite alternate
     cubic-bezier(0.7, 0.25, 0.34, 0.78);
+
+    
 }
 
 @keyframes levitation {
